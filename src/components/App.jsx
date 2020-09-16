@@ -1,36 +1,29 @@
-import React from "react";
-import Aleatorio from "./Aleatorio";
-
-
+import React, { useState } from "react";
+import Menu from "./Menu";
+import Axios from "axios";
 
 //poderiamos carregar a pagina e dar f5 para os numeros iremo mudando automaticamente
 //ou fazer isso via hooks
 
-
-setInterval(() => {
-
-  window.location.reload()
-  
-}, 3000);
-
-
 export default props => {
+  const [msg, setMsg] = useState("");
 
-  
-  
+  Axios.get("http://localhost:3001/react").then(res => {
+    console.log(res.data);
+
+    setMsg(res.data.msg)
+  });
+
   return (
     <div>
 
-    
-        <Aleatorio
-        
-            max = {100}
-            min = {50}
 
-        />
-       
-        
+      
 
+      <Menu item1="HOME" item2="QUEM SOMOS" item3="AGENDA" item4="PRODUTOS" />
+
+
+      <h2 >{msg}</h2>
     </div>
   );
 };

@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-gray {
+    background-color: rgb(211, 202, 202);
+    width: 100%;
+    margin: 0;
+}
