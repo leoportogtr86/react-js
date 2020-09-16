@@ -1,6 +1,8 @@
 import React from "react";
 import "./Condicional.css";
 
+//operador ternario
+
 export default props => {
   let x = 4;
   let y = 13;
@@ -27,7 +29,7 @@ export default props => {
          <h1>Pai</h1> : 
          <h1>Filho</h1>}
 
-         
+
     </div>
   );
 };
