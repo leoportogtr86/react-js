@@ -1,0 +1,16 @@
+button {
+    background-color: rgb(218, 218, 218);
+    border: 2px solid black;
+    font-family: "Courier New", Courier, monospace;
+}
+
+button:hover {
+    background-color: rgb(243, 50, 50);
+    color: wheat;
+}
+
+.sombra {
+    -webkit-box-shadow: 10px 11px 28px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 28px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 11px 28px -2px rgba(0, 0, 0, 0.75);
+}
