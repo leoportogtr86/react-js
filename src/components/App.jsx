@@ -2,7 +2,7 @@ import React from "react";
 
 export default props => {
 
-  let array = [0, 1, 2, 3, 4, 5]
+  let array = ['Leo', 'Davi', 'Liz', 'Chris']
 
   const elementos = array.map((e) => {
 
