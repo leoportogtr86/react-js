@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import './App.css'
-import axios from 'axios'
-import Svg from "./Svg";
+import Svg from "./Svg.jsx";
 
 export default props => {
-
 
   return (
 
@@ -22,8 +20,6 @@ export default props => {
           </div>
         </div>
       </div>
-
-
 
     </div>
   );
