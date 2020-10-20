@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './App.css'
+import Contador from "./Contador";
 import Svg from "./Svg.jsx";
 
 export default props => {
@@ -11,15 +12,8 @@ export default props => {
 
       <h1 className="text-center text-primary">Título da Página</h1>
 
-      <div className="container">
-        <div className="row">
-          <div className="col-2">
+      <Contador />
 
-            <Svg />
-
-          </div>
-        </div>
-      </div>
 
     </div>
   );
