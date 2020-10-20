@@ -3,13 +3,15 @@ import React, { useState } from 'react'
 export default props => {
 
     const [num, setNum] = useState(0)
+    const [passo, setPasso] = useState(1)
+
 
 
     function mais() {
 
         let x = num
 
-        x += 1
+        x += Number(passo)
 
 
 
@@ -23,12 +25,18 @@ export default props => {
 
         let x = num
 
-        x -= 1
+        x -= Number(passo)
 
         setNum(x)
 
 
         console.log(num)
+
+    }
+
+    function changePasso(e) {
+
+        setPasso(e.target.value)
 
     }
 
@@ -50,6 +58,19 @@ export default props => {
                     </div>
                     <div className="col">
                         <button className="btn btn-success btn-block" onClick={mais}>+</button>
+                    </div>
+
+                </div>
+
+                <div className="row">
+                    <div className="col">
+                        <input type="text" className="text-center w-100" placeholder="Passo" onChange={changePasso} />
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col">
+                        <h3 className="text-center">Nosso contador vai aumentar ou descer de {passo} em {passo}</h3>
                     </div>
                 </div>
             </div>
