@@ -18,7 +18,8 @@ export default props => {
         <div>
 
             <ReactHowler src={Audio} playing={playing}></ReactHowler>
-            <button className="btn btn-danger" onClick={play}>Play</button>
+            <button className="btn btn-danger m-5" onClick={play}>Play</button>
+            <audio src={Audio} controls></audio>
 
         </div>
     )
