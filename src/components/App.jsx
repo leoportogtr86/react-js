@@ -11,11 +11,9 @@ export default props => {
 
     <div>
 
-      <h1 className="text-center text-primary">Título da Página</h1>
+
 
       <Deezer />
-
-
 
 
     </div>
