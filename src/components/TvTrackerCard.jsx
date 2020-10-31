@@ -13,10 +13,7 @@ const TvTrackerCard = styled.div`
         display: block;
     }
 
-    .container{
-
-        width: 30%;
-    }
+   
 
 `
 
@@ -25,12 +22,12 @@ const TvTrackerCard = styled.div`
 export default props => {
 
     const [titulo, setTitulo] = useState('')
-    const [subtitulo, setSubtitulo] = useState('')
-    const [imgagem, setImagem] = useState('')
+    const [descricao, setDescricao] = useState('')
+    const [imagem, setImagem] = useState('')
 
-    let serie = 'breaking-bad'
 
-    let url = 'http://api.tvmaze.com/search/shows?q=' + serie
+
+    let url = 'http://api.tvmaze.com/search/shows?q=' + props.serie
 
     axios.get(url).then((res) => {
 
@@ -39,11 +36,7 @@ export default props => {
 
         setTitulo(res.data[0].show.name)
 
-        let sub = res.data[0].show.summary.replace('<p>', '')
-        sub = sub.replace('</p>', '')
-        sub = sub.replace('</b>', '')
-        sub = sub.replace('<b>', '')
-        setSubtitulo(sub)
+        setDescricao(res.data[0].show.summary)
     })
 
     return (
@@ -52,7 +45,7 @@ export default props => {
 
             <TvTrackerCard>
 
-                <h1 className="text-center text-danger">Tracker Tv Series</h1>
+
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col-12">
@@ -60,18 +53,16 @@ export default props => {
 
                                 <div className="card-header">
 
-                                    <img src={imgagem} alt="" className="card-img-top" />
+                                    <img src={imagem} alt="" className="card-img-top" />
 
                                     <h3 className="text-center text-danger mt-3">{titulo}</h3>
-                                    <p className="card-subtitle">{subtitulo}</p>
-
-
 
                                 </div>
                                 <div className="card-body">
 
+                                    {/* retirando as tags com replace e regex */}
 
-
+                                    {descricao.replace(/<p>|<\/p>|<b>|<\/b>/g, '')}
 
                                 </div>
                             </div>
