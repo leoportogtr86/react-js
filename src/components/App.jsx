@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Login from "./Login";
+import TvTrackerCard from "./TvTrackerCard";
 
 
 
@@ -11,7 +11,7 @@ export default props => {
 
     <div>
 
-      <Login />
+      <TvTrackerCard />
 
 
 
