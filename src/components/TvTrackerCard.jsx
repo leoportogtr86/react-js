@@ -7,11 +7,13 @@ const TvTrackerCard = styled.div`
 
     img{
 
-        width: 80%;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         display: block;
     }
+
+   
 
    
 
@@ -24,6 +26,7 @@ export default props => {
     const [titulo, setTitulo] = useState('')
     const [descricao, setDescricao] = useState('')
     const [imagem, setImagem] = useState('')
+    const [link, setLink] = useState('')
 
 
 
@@ -35,7 +38,7 @@ export default props => {
         setImagem(res.data[0].show.image.medium)
 
         setTitulo(res.data[0].show.name)
-
+        setLink(res.data[0].show.officialSite)
         setDescricao(res.data[0].show.summary)
     })
 
@@ -44,7 +47,6 @@ export default props => {
         <div>
 
             <TvTrackerCard>
-
 
                 <div className="container mt-5">
                     <div className="row">
@@ -55,7 +57,7 @@ export default props => {
 
                                     <img src={imagem} alt="" className="card-img-top" />
 
-                                    <h3 className="text-center text-danger mt-3">{titulo}</h3>
+                                    <h3 className="text-center text-danger mt-3"><a href={link}>{titulo}</a></h3>
 
                                 </div>
                                 <div className="card-body">
