@@ -1,5 +1,8 @@
-import React, { useState } from "react";
-import Voz from './Voz'
+import ComponenteSlider from './ComponenteSlider'
+import React from "react";
+
+
+
 
 
 export default props => {
@@ -10,7 +13,10 @@ export default props => {
 
     <div>
 
-      <Voz texto="teste de texto falado" />
+      <ComponenteSlider />
+
+
+
 
 
 

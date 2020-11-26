@@ -11,15 +11,14 @@ const TvTrackerCard = styled.div`
         margin-left: auto;
         margin-right: auto;
         display: block;
-    }
+    }  
 
-   
+    .container{
 
-   
+        width: 50%;
+    }  
 
 `
-
-
 
 export default props => {
 
@@ -27,10 +26,23 @@ export default props => {
     const [descricao, setDescricao] = useState('')
     const [imagem, setImagem] = useState('')
     const [link, setLink] = useState('')
+    const [serie, setSerie] = useState('homeland')
+    const [nome, setNome] = useState('homeland')
+
+    function changeSerie(e) {
+
+        setNome(e.target.value)
 
 
+    }
 
-    let url = 'http://api.tvmaze.com/search/shows?q=' + props.serie
+    function buscar() {
+
+        setSerie(nome)
+
+    }
+
+    let url = 'http://api.tvmaze.com/search/shows?q=' + serie
 
     axios.get(url).then((res) => {
 
@@ -47,6 +59,9 @@ export default props => {
         <div>
 
             <TvTrackerCard>
+
+                <input type="text" placeholder="Digite o título" className="m-5" onChange={changeSerie} />
+                <button className="btn btn-danger" onClick={buscar}>Buscar</button>
 
                 <div className="container mt-5">
                     <div className="row">
@@ -72,7 +87,6 @@ export default props => {
                     </div>
                 </div>
             </TvTrackerCard>
-
 
         </div>
     )
