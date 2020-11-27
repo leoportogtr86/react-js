@@ -24,7 +24,7 @@ export default props => {
                 <div className="row">
 
                     <div className="col-6">
-                        <Slider onChange={changeVolume} value={volume} marks={true} step={10} />
+                        <Slider onChange={changeVolume} value={volume} marks={true} step={10} color="secondary" />
                     </div>
                 </div>
             </div>

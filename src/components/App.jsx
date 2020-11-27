@@ -1,5 +1,5 @@
-import ComponenteSlider from './ComponenteSlider'
 import React from "react";
+import ComponenteButton from "./ComponenteButton";
 
 
 
@@ -13,10 +13,7 @@ export default props => {
 
     <div>
 
-      <ComponenteSlider />
-
-
-
+      <ComponenteButton />
 
 
 
