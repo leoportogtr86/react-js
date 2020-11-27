@@ -1,5 +1,5 @@
 import React from "react";
-import ComponenteButton from "./ComponenteButton";
+import GrupoDeBotoes from "./GrupoDeBotoes";
 
 
 
@@ -13,7 +13,10 @@ export default props => {
 
     <div>
 
-      <ComponenteButton />
+      <GrupoDeBotoes />
+
+
+
 
 
 
