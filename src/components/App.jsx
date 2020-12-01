@@ -1,5 +1,5 @@
 import React from "react";
-import BotaoAcaoFlutuante from "./BotaoAcaoFlutuante";
+import Interruptor from "./Interruptor";
 
 
 
@@ -11,8 +11,7 @@ export default props => {
 
     <div>
 
-      <BotaoAcaoFlutuante />
-
+      <Interruptor />
 
 
     </div >
