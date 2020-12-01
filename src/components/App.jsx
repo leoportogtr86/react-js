@@ -1,7 +1,5 @@
 import React from "react";
-import CaixaDeSelecao from './CaixaDeSelecao'
-
-
+import BotaoAcaoFlutuante from "./BotaoAcaoFlutuante";
 
 
 
@@ -13,7 +11,9 @@ export default props => {
 
     <div>
 
-      <CaixaDeSelecao />
+      <BotaoAcaoFlutuante />
+
+
 
     </div >
   );
