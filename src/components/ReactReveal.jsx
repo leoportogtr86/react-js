@@ -1,37 +1,32 @@
-import React from 'react'
-import Fade from 'react-reveal/Fade'
-import Flip from 'react-reveal/Flip'
-import Rotate from 'react-reveal/Rotate'
-import Zoom from 'react-reveal/Zoom'
-import RubberBand from 'react-reveal/RubberBand'
-
+import React, { useState } from 'react'
+import Pulse from 'react-reveal/Pulse'
+import Logo from '../components/assets/img/heart'
 export default props => {
 
+    const [ligado, setLigado] = useState(false)
 
+    function animar() {
+
+        setLigado(true)
+
+
+
+    }
 
     return (
 
         <div>
 
-            <Fade>
-                <h1 className="m-5">Guitarra Blues</h1>
-            </Fade>
+            <Pulse when={ligado} forever>
+                <img src={Logo} alt="" />
+            </Pulse>
 
-            <Flip>
-                <h1 className="text-danger m-5">Guitarra Jazz</h1>
-            </Flip>
 
-            <Rotate>
-                <h1 className="text-primary m-5">Guitarra Fusion</h1>
-            </Rotate>
 
-            <Zoom>
-                <h1 className="text-success m-5">Guitarra Erudita</h1>
-            </Zoom>
+            <button className="btn btn-lg btn-block btn-danger" onClick={animar}>Animar</button>
 
-            <RubberBand>
-                <h1 className="text-warning m-5">Joe Satriani</h1>
-            </RubberBand>
+            <img src="https://www.google.com/search?q=coracao+svg&tbm=isch&source=iu&ictx=1&fir=OKTeJMQ8nkq99M%252CjuWuLiYH4gLlzM%252C_&vet=1&usg=AI4_-kQK-h8CppyoeWz7XtSwGnww4UyVzQ&sa=X&ved=2ahUKEwi2htaS3LbtAhXmGLkGHcdQBT0Q9QF6BAgIEAE#imgrc=OKTeJMQ8nkq99M" alt="" />
+
 
 
 
