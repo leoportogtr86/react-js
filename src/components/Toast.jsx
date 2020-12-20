@@ -23,6 +23,13 @@ export default props => {
                 <Alert severity="success" onClose={close}>Alerta dentro de uma snack bar</Alert>
             </Snackbar>
 
+            <Snackbar
+                message="Isto é um aviso dentro de uma snack bar"
+                open={open}
+                onClose={close}
+                anchorOrigin={{ vertical: 'top', horizontal: 'left' }}
+            />
+
 
         </div>
     )
