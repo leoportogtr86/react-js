@@ -1,5 +1,8 @@
 import React from "react";
-import Spinner from './Spinner'
+import Snackbar from './Toast'
+
+
+
 export default props => {
 
 
@@ -8,7 +11,7 @@ export default props => {
 
     <div>
 
-      <Spinner />
+      <Snackbar />
 
     </div >
   );
