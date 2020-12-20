@@ -1,7 +1,5 @@
 import React from "react";
-import Materialize from "./Materialize";
-import ReactReveal from "./ReactReveal";
-
+import Spinner from './Spinner'
 export default props => {
 
 
@@ -10,8 +8,7 @@ export default props => {
 
     <div>
 
-      <Materialize />
-
+      <Spinner />
 
     </div >
   );
