@@ -1,6 +1,5 @@
 import React from "react";
-import Snackbar from './Toast'
-
+import Anime from './Anime'
 
 
 export default props => {
@@ -11,7 +10,8 @@ export default props => {
 
     <div>
 
-      <Snackbar />
+      <Anime />
+
 
     </div >
   );
