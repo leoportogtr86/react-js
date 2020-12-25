@@ -1,7 +1,6 @@
 import React from "react";
-import Anime from './Anime'
-
-
+import Anime from "./Anime";
+import Erro from "./Erro";
 export default props => {
 
 
@@ -10,7 +9,10 @@ export default props => {
 
     <div>
 
-      <Anime />
+
+
+      <Erro />
+
 
 
     </div >
