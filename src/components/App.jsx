@@ -1,6 +1,7 @@
 import React from "react";
-import Anime from "./Anime";
-import Erro from "./Erro";
+import ReactBootstrap from './ReactBootstrap'
+
+
 export default props => {
 
 
@@ -9,9 +10,11 @@ export default props => {
 
     <div>
 
+      <ReactBootstrap />
 
 
-      <Erro />
+
+
 
 
 
