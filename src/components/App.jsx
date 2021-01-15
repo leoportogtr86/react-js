@@ -1,6 +1,5 @@
 import React from "react";
-import ReactBootstrap from './ReactBootstrap'
-
+import Arwes from './Arwes'
 
 export default props => {
 
@@ -9,15 +8,7 @@ export default props => {
 
 
     <div>
-
-      <ReactBootstrap />
-
-
-
-
-
-
-
+      <Arwes />
     </div >
   );
 };

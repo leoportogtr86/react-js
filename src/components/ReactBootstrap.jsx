@@ -57,6 +57,21 @@ export default props => {
                 </Row>
             </Container>
 
+            <Container>
+                <Row>
+                    <Col>
+
+                        <Alert variant="primary">Isto é um alerta primário</Alert>
+                        <Alert variant="danger">Alerta danger</Alert>
+                        <Alert variant="danger">Alerta danger</Alert>
+                        <Alert variant="success">Alerta success</Alert>
+                        <Alert variant="info">Alerta info</Alert>
+                        <Alert variant="warning">Alerta warning</Alert>
+
+                    </Col>
+                </Row>
+            </Container>
+
 
 
         </div>
