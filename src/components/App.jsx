@@ -1,14 +1,20 @@
 import React from "react";
-import Arwes from './Arwes'
+import Nomes from './Nomes'
 
-export default props => {
+
+export default () => {
+
 
 
   return (
 
 
     <div>
-      <Arwes />
+
+      <Nomes />
+
+
+
     </div >
   );
 };
