@@ -1,6 +1,17 @@
 import React from "react";
-import Nomes from './Nomes'
+import styled, { createGlobalStyle } from 'styled-components'
 
+
+
+const GlobalStyle = createGlobalStyle`
+
+    h1{
+
+      color: red;
+      background-color: #815858;
+    }
+
+`
 
 export default () => {
 
@@ -10,11 +21,13 @@ export default () => {
 
 
     <div>
+      <GlobalStyle />
 
-      <Nomes />
 
-
+      <h1>Teste</h1>
 
     </div >
+
+
   );
 };
