@@ -1,17 +1,30 @@
 import React from "react";
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
+import Text00 from './Texto00'
 
 
 
-const GlobalStyle = createGlobalStyle`
 
-    h1{
+const Row = styled.div`
 
-      color: red;
-      background-color: #815858;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 `
+
+
+
+const theme = {
+
+  colors: {
+
+    primary: 'red',
+    secondary: 'blue',
+    success: 'green'
+  }
+}
 
 export default () => {
 
@@ -20,13 +33,20 @@ export default () => {
   return (
 
 
-    <div>
-      <GlobalStyle />
+    <ThemeProvider theme={theme}>
+
+      <Row>
+
+        <Text00 title="Leo Porto" />
+        <Text00 title="Leo Porto" />
+        <Text00 title="Leo Porto" />
+        <Text00 title="Leo Porto" />
 
 
-      <h1>Teste</h1>
+      </Row>
 
-    </div >
+
+    </ThemeProvider>
 
 
   );
