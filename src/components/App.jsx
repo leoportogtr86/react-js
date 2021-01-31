@@ -1,7 +1,6 @@
 import React from "react";
 import styled, { ThemeProvider } from 'styled-components'
-import Text00 from './Texto00'
-
+import If from './If'
 
 
 
@@ -35,15 +34,15 @@ export default () => {
 
     <ThemeProvider theme={theme}>
 
-      <Row>
+      <If teste={1 > 0}>
 
-        <Text00 title="Leo Porto" />
-        <Text00 title="Leo Porto" />
-        <Text00 title="Leo Porto" />
-        <Text00 title="Leo Porto" />
+        <h1>Será mostrado?</h1>
+
+      </If>
 
 
-      </Row>
+
+
 
 
     </ThemeProvider>
