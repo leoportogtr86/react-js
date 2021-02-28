@@ -1,7 +1,5 @@
 import React from "react";
 import styled, { ThemeProvider } from 'styled-components'
-import If from './If'
-
 
 
 const Row = styled.div`
@@ -29,18 +27,10 @@ export default () => {
 
 
 
-  return (
+  re
 
 
     <ThemeProvider theme={theme}>
-
-      <If teste={1 > 0}>
-
-        <h1>Será mostrado?</h1>
-
-      </If>
-
-
 
 
 
