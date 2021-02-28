@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { ThemeProvider } from 'styled-components'
-
+import UseState from './hooks/UseState/index'
 
 const Row = styled.div`
 
@@ -26,17 +26,21 @@ const theme = {
 export default () => {
 
 
+  return (
 
-  re
+    <div>
 
+      <UseState />
 
-    <ThemeProvider theme={theme}>
-
-
-
-
-    </ThemeProvider>
+    </div>
+  )
 
 
-  );
+
+
+
+
+
+
+
 };
