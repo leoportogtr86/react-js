@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { ThemeProvider } from 'styled-components'
 import UseState from './hooks/UseState/index'
+import Servico from './Servico/Servico'
 
 const Row = styled.div`
 
@@ -10,8 +11,6 @@ const Row = styled.div`
     align-items: center;
 
 `
-
-
 
 const theme = {
 
@@ -30,17 +29,8 @@ export default () => {
 
     <div>
 
-      <UseState />
 
     </div>
   )
-
-
-
-
-
-
-
-
 
 };
